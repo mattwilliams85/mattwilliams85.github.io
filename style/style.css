@@ -131,6 +131,18 @@ body {
   text-align: center;
 }
 
+.error {
+  color: red;
+}
+
+.me {
+  clip-path: polygon(25% 0, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  background: url("../img/me.jpg");
+  height: 250px;
+  width: 280px;
+  background-size: contain;
+}
+
 #preload {
   display: none;
 }
@@ -202,7 +214,7 @@ body {
   background-color: #04c2c9;
   display: inline-block;
   height: 100%;
-  width: calc(100% * 0.57735);
+  width: 57.735%;
 }
 
 .hexagon:before {
@@ -210,7 +222,7 @@ body {
   content: "";
   height: inherit;
   position: absolute;
-  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  right: 21.1325%;
   top: 0;
   transform: rotateZ(60deg);
   width: inherit;
@@ -221,7 +233,7 @@ body {
   content: "";
   height: inherit;
   position: absolute;
-  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  right: 21.1325%;
   top: 0;
   transform: rotateZ(-60deg);
   width: inherit;
@@ -997,38 +1009,30 @@ footer .footnote .highlight {
   body {
     font-size: 12pt;
   }
-
   .container {
     padding: 0 20px;
   }
-
   .header {
     font-size: 30pt;
   }
-
   .header-bar {
     margin: 25px 0 100px 0;
   }
-
   .label {
     font-size: 18pt;
   }
-
   .hex-wrap {
     height: 100px;
     width: 100px;
   }
-
   .slide,
-.carousel-wrap {
+  .carousel-wrap {
     height: 450px;
   }
-
   .mdi-chevron-left,
-.mdi-chevron-right {
+  .mdi-chevron-right {
     font-size: 25pt !important;
   }
-
   .modal-wrap .modal {
     height: initial;
     top: -6vh;
@@ -1054,7 +1058,6 @@ footer .footnote .highlight {
   .modal-wrap .button {
     left: 25px;
   }
-
   nav .link-wrap {
     background: none;
     height: initial;
@@ -1077,7 +1080,6 @@ footer .footnote .highlight {
   nav .mdi-menu {
     display: none;
   }
-
   section {
     line-height: 18pt;
     padding: 100px 0 130px 0;
@@ -1166,7 +1168,6 @@ footer .footnote .highlight {
   .waypoint {
     opacity: 0;
   }
-
   .animated.waypoint#gallery {
     opacity: 1;
   }
@@ -1206,7 +1207,6 @@ footer .footnote .highlight {
     animation: slideUp 0.75s 0.9s ease both;
     opacity: 0;
   }
-
   .animated.slide-up {
     animation: slideUp 0.75s ease both;
   }
@@ -1228,19 +1228,15 @@ footer .footnote .highlight {
   .animated.pop-in {
     animation: popIn 1s both;
   }
-
   .canvas {
     background: #252934;
   }
-
   .button {
     font-size: 16pt;
   }
-
   .flex.row-gt-sm {
     flex-direction: row;
   }
-
   .flex-50-gt-sm {
     box-sizing: border-box;
     -webkit-flex: 1 1 50%;
@@ -1249,7 +1245,6 @@ footer .footnote .highlight {
     max-height: 100%;
     max-width: 50%;
   }
-
   section:nth-of-type(2) .bars-wrap {
     margin: 0 0 0 0;
   }

@@ -179,24 +179,68 @@ $(function() {
     onScrollInit($('.waypoint'));
   }, 10);
 
-  // CONTACT FORM
-  $('#contact-form').submit(function(e) {
+  // // CONTACT FORM
+  // $('#contact-form').submit(function(e) {
+  //   e.preventDefault();
+  //   $.ajax({
+  //     url: 'https://api.web3forms.com/submit',
+  //     method: 'POST',
+  //     data: { message: $('form').serialize(), access_key: 'cdde2ef6-ca0e-437a-8dc6-17434a99a38f' },
+  //     dataType: 'json'
+  //   }).done(function(response) {
+  //     $('#success').addClass('expand');
+  //     $('#contact-form')
+  //       .find('input[type=text], input[type=email], textarea')
+  //       .val('');
+  //   });
+  // });
+
+  // $('#close').click(function() {
+  //   $('#success').removeClass('expand');
+  // });
+  const form = document.getElementById("contact-form");
+
+  form.addEventListener("submit", function (e) {
+    const formData = new FormData(form);
     e.preventDefault();
-
-    $.ajax({
-      url: 'https://formspree.io/mattwilliams85@gmail.com',
-      method: 'POST',
-      data: { message: $('form').serialize() },
-      dataType: 'json'
-    }).done(function(response) {
-      $('#success').addClass('expand');
-      $('#contact-form')
-        .find('input[type=text], input[type=email], textarea')
-        .val('');
+    var object = {};
+    formData.forEach((value, key) => {
+      object[key] = value;
     });
-  });
-
-  $('#close').click(function() {
-    $('#success').removeClass('expand');
+    var json = JSON.stringify(object);
+    result.innerHTML = "Please wait...";
+  
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    })
+      .then(async (response) => {
+        let json = await response.json();
+        if (response.status == 200) {
+          result.innerHTML = json.message;
+          result.classList.remove("text-gray-500");
+          result.classList.add("text-green-500");
+        } else {
+          console.log(response);
+          result.innerHTML = json.message;
+          result.classList.remove("text-gray-500");
+          result.classList.add("text-red-500");
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+        result.innerHTML = "Something went wrong!";
+      })
+      .then(function () {
+        form.reset();
+        setTimeout(() => {
+          result.style.display = "none";
+        }, 5000);
+      });
   });
 });
+

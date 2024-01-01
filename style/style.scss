@@ -169,6 +169,18 @@ body {
   text-align: center;
 }
 
+.error {
+  color: red;
+}
+
+.me {
+  clip-path: polygon(25% 0, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  background: url('../img/me.jpg');
+  height: 250px;
+  width: 280px;
+  background-size: contain;
+}
+
 #preload {
   display: none;
 }

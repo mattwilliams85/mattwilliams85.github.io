@@ -19,15 +19,15 @@ $(document).ready(function() {
       title: 'NewRelic.com',
       tag: 'APPLICATION PERFORMANCE MONITORING.',
       detail:
-        'Roambi provides analytics, reporting, and business intelligence for companies to use on the go. A Wordpress hosted site written in PHP and Javascript with Hubspot Integration.',
+        'New Relic allows companys to monitor and analyze their application data efficiently and respond to incidents before they become a problem.',
       link: 'http://www.newrelic.com'
     },
-    roambi: {
-      title: 'Roambi.com',
-      tag: 'BUSINESS ANALYTICS.',
+    brave: {
+      title: 'Brave Creators',
+      tag: 'CRYPTO CONTRIBUTIONS.',
       detail:
-        'Roambi provides analytics, reporting, and business intelligence for companies to use on the go. A Wordpress hosted site written in PHP and Javascript with Hubspot Integration.',
-      link: 'http://www.roambi.com'
+        'A platform for content creators to monetize their work and collect contributions through secure and reliable crypto currency',
+      link: 'https://creators.brave.com/'
     },
     walker: {
       title: 'WalkerTracker',
