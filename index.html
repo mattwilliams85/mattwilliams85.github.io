@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Matt Williams</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    />
+
+    <!-- HOSTED -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="fonts/mdi/css/materialdesignicons.min.css"
+      media="all"
+      rel="stylesheet"
+    />
+
+    <!-- LOCAL -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+
+    <!-- HOSTED -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+    <!-- LOCAL -->
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="scripts/pt.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/modal.js"></script>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div>
+      <!-- <MODAL> -->
+      <div class="modal-wrap flex">
+        <div class="mask"></div>
+        <div class="modal" id="modal">
+          <div class="carousel-wrap">
+            <div class="window">
+              <div id="carousel">
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+              </div>
+              <i class="mdi mdi-chevron-left" id="prev"></i>
+              <i class="mdi mdi-chevron-right" id="next"></i>
+            </div>
+          </div>
+          <div class="info-box">
+            <div class="title"></div>
+            <div class="tag"></div>
+            <div class="detail"></div>
+            <a href="#" target="_blank"
+              ><div class="button">
+                <span><i class="mdi mdi-open-in-new"></i>VIEW SITE</span>
+              </div></a
+            >
+          </div>
+          <i class="close mdi mdi-close"></i>
+        </div>
+        
+      </div>
+
+      <!-- HOME -->
+       <section id="home">
+          <div class="top-nav">
+            <a href="https://findmatthew.com"><<div class="hl-blue">MattWilliams</div><div class="expander">onClick={reload}</div><div class="hl-purp">/</div>></a>
+          </div>
+          <div class="box">
+            <div class="mainheader">MATT WILLIAMS</div>
+            
+            <div class="subheader">FRONT-END DEVELOPER, <br />UI-ENGINEER, & DESIGNER</div>
+          </div>
+          <div id="pt" class="canvas">
+            <div class="fade"></div>
+          </div>
+          <div class="scroll-down page-link" dest="skills">
+            <dotlottie-player src="https://lottie.host/3c10e1d6-dc45-46b3-be7f-dcf149686794/n7M1q0mnR5.lottie" background="transparent" speed="1" style="width: 65px; height: 65px" loop autoplay></dotlottie-player>
+          </div>
+       </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+      <div class="header waypoint" data-animation="slide-up">My Expertise</div>
+      <div class="box-wrap flex column">
+        <div class="box waypoint" data-animation="slide-up">
+          <div class="fade"></div>
+          <div class="flex title-wrap">
+            <div class="icon monitor"><span class="mdi mdi-monitor"></span></div>
+            <div class="title">
+              <span class="top">Software</span>
+              <div>Development</div>
+            </div>
+          </div>
+          <div class="body-wrap">
+            <div class="body">Experienced in developing both front back end technologies. Python, Ruby, JavaScript, TypeScript.</div>
+          </div>
+        </div>
+        <div class="box waypoint" data-animation="slide-up" data-delay=".1s">
+          <div class="fade"></div>
+          <div class="flex title-wrap">
+            <div class="icon"><span class="mdi mdi-react"></span></div>
+            <div class="title">
+              <span class="top blue">Frontend Dev</span>
+              <div>React, NextJS</div>
+            </div>
+          </div>
+          <div class="body-wrap">
+            <div class="body">Passionate about UI/UX. Over 5 years of development experience in HTML, CSS, JS, React and NextJS frameworks.</div>
+          </div>
+        </div>
+        <div class="box waypoint" data-animation="slide-up" data-delay=".2s">
+          <div class="fade"></div>
+          <div class="flex title-wrap">
+            <div class="icon"><span class="mdi mdi-language-css3"></span></div>
+            <div class="title">
+              <span class="top orange">Web Design</span>
+              <div>CSS3, Figma</div>
+            </div>
+          </div>
+          <div class="body-wrap">
+            <div class="body">Skilled in creating and designing high-end visuals and animations with CSS3 and WebGL.</div>
+          </div>
+        </div>
+        <div class="box waypoint" data-animation="slide-up">
+          <div class="inner-wrap">
+            <div class="flex title-wrap">
+              <div class="title">
+                <span>Styles come and go. Good design is a language, not a style.</span>
+              </div>
+              
+            </div>
+            <div class="quote">- Massimo Vingelli</div>
+          </div>
+        </div>
+      </div>
+      <div class="code">
+        <img src="./img/code.png" />
+      </div>
+      </section>
+
+      <!-- WORK -->
+      <section id="work">
+        <div class="md-flex">
+          <div class="text-wrap">
+            <div class="header waypoint" data-animation="slide-up">My Work</div>
+            <div class="text waypoint" data-animation="slide-up" data-delay=".1s">
+              Deployed scalable, responsive web and hybrid mobile apps that served hundreds of thousands of clients.
+              <br /><br />
+              Focused on high-performing applications with intuitive and dynamic interactions. I also have a passion for data analytics and visualization.
+            </div>
+          </div>
+          <div class="video-wrap">
+            <video class="video" src="./video/phone2.mov" autoplay loop muted></video>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section class="" id="portfolio">
+        <div class="gallery-wrap">
+          <div class="filter-wrap waypoint" data-animation="slide-up">
+            <div class="flex row">
+              <div class="filter active" data-filter="all">All<sup>10</sup><span>/</span></div>
+              <div class="filter" data-filter=".react">React<sup>04</sup><span>/</span></div>
+              <div class="filter" data-filter=".js">Javascript<sup>03</sup><span>/</span></div>
+              <div class="filter" data-filter=".rails">Ruby<sup>02</sup></div>
+            </div>
+          </div>
+          <div id="gallery" class="grid">
+            <div class="grid-item react" id="discover">
+              <div class="card-wrap waypoint" data-animation="slide-up">
+                <div class="overflow-wrap">
+                  <div class="card"></div>
+                </div>
+                <div class="text">
+                  <div class="bold">ChowNow Discover</div>
+                  <div class="relative">
+                    <div class="highlight">React JS / Python</div>
+                    <div class="slideup">Show Project</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="grid-item react" id="newrelic">
+              <div class="card-wrap waypoint" data-animation="slide-up">
+                <div class="overflow-wrap">
+                  <div class="card"></div>
+                </div>
+                <div class="text">
+                  <div class="bold">New Relic</div>
+                  <div class="relative">
+                    <div class="highlight">
+                      React / Ruby on Rails / AEM
+                    </div>
+                    <div class="slideup">Show Project</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="grid-item react one" id="brave">
+              <div class="card-wrap waypoint" data-animation="slide-up">
+                <div class="overflow-wrap">
+                  <div class="card"></div>
+                </div>
+                <div class="text">
+                  <div class="bold">Brave Creators</div>
+                  <div class="relative">
+                    <div class="highlight">NextJS / React</div>
+                    <div class="slideup">Show Project</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="grid-item grid-item--width2 react" id="ordering">
+                <div class="overflow-wrap">
+                  <div class="card"></div>
+                </div>
+                <div class="text">
+                  <div class="bold">ChowNow Ordering</div>
+                  <div class="relative">
+                    <div class="highlight">React JS / Python</div>
+                    <div class="slideup">Show Project</div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="grid-item react two" id="brave">
+              <div class="card-wrap waypoint" data-animation="slide-up">
+                <div class="overflow-wrap">
+                  <div class="card"></div>
+                </div>
+                <div class="text">
+                  <div class="bold">Brave Creators</div>
+                  <div class="relative">
+                    <div class="highlight">NextJS / React</div>
+                    <div class="slideup">Show Project</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="grid-item rails" id="walker">
+              <div class="card-wrap waypoint" data-animation="slide-up">
+                <div class="overflow-wrap">
+                  <div class="card"></div>
+                </div>
+                <div class="text">
+                  <div class="bold">Walker Tracker</div>
+                  <div class="relative">
+                    <div class="highlight">JS / Ruby on Rails</div>
+                    <div class="slideup">Show Project</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="grid-item js" id="mystand">
+              <div class="card-wrap waypoint" data-animation="slide-up">
+                <div class="overflow-wrap">
+                  <div class="card"></div>
+                </div>
+                <div class="text">
+                  <div class="bold">My Stand</div>
+                  <div class="relative">
+                    <div class="highlight">JS / Node.js on Sails</div>
+                    <div class="slideup">Show Project</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="grid-item js" id="never">
+              <div class="card-wrap waypoint" data-animation="slide-up">
+                <div class="overflow-wrap">
+                  <div class="card"></div>
+                </div>
+                <div class="text">
+                  <div class="bold">NEVER SURRENDER</div>
+                  <div class="relative">
+                    <div class="highlight">JavaScript</div>
+                    <div class="slideup">Show Project</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="grid-item rails" id="powur">
+              <div class="card-wrap waypoint" data-animation="slide-up">
+                <div class="overflow-wrap">
+                  <div class="card"></div>
+                </div>
+                <div class="text">
+                  <div class="bold">Powur</div>
+                  <div class="relative">
+                    <div class="highlight">Angular / Ruby on Rails</div>
+                    <div class="slideup">Show Project</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="grid-item js" id="themall">
+              <div class="card-wrap waypoint" data-animation="slide-up">
+                <div class="overflow-wrap">
+                  <div class="card"></div>
+                </div>
+                <div class="text">
+                  <div class="bold">The Mall</div>
+                  <div class="relative">
+                    <div class="highlight">React.js / Node</div>
+                    <div class="slideup">Show Project</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <div class="header waypoint" data-animation="slide-up">Professional Experience</div>
+          <div class="accordion">
+            <div class="title">
+              <div>Senior Front-End Engineer @ Brave</div>
+              <div class="flex">
+                <span>2023 - Present</span>
+                <div class="plus">
+                  <div class="plus-minus-toggle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="expand">
+              <div class="inner">
+                <div class="wrap">
+                  <div class="logo" id="brave"></div>
+                  <div><i class="mdi mdi-map-marker"></i><span class="subtext">Remote</span></div>
+                  <a href="https://brave.com" target="_blank"><div><i class="mdi mdi-open-in-new"></i><span class="subtext">Brave.com</span></div></a>
+                  <div class="description">
+                    Led the Creators platform rebuild with React and Next.js 13, improving performance, scalability, and accessibility. Built over 50% of Brave's reusable component library and assisted in implementing GraphQL for efficient API data fetching.
+                  </div>
+                  <div class="skills">
+                    <div>Javascript</div>
+                    <div>React</div>
+                    <div>NextJS</div>
+                    <div>TypeScript</div>
+                    <div>Tailwind</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="title">
+              <div>Senior Front-End Engineer @ ChowNow</div>
+              <div class="flex">
+                <span>2018 - 2023</span>
+                <div class="plus">
+                  <div class="plus-minus-toggle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="expand">
+              <div class="inner">
+                <div class="wrap">
+                  <div class="logo" id="chownow"></div>
+                  <div><i class="mdi mdi-map-marker"></i><span class="subtext">Los Angeles</span></div>
+                  <a href="https://chownow.com" target="_blank"><div><i class="mdi mdi-open-in-new"></i><span class="subtext">chownow.com</span></div></a>
+                  <div class="description">
+                    Developed high-impact React applications, mentored junior engineers, and ensured code quality through reviews. Built A/B testing frameworks that enhanced user experience and boosted conversion rates.                    
+                  </div>
+                  <div class="skills">
+                    <div>Javascript</div>
+                    <div>React</div>
+                    <div>Redux</div>
+                    <div>Figma</div>
+                    <div>Python</div>
+                    <div>GraphQL</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="title">
+              <div>Growth Engineer @ New Relic</div>
+              <div class="flex">
+                <span>2016 - 2018</span>
+                <div class="plus">
+                  <div class="plus-minus-toggle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="expand">
+              <div class="inner">
+                <div class="wrap">
+                  <div class="logo" id="newrelic"></div>
+                  <div><i class="mdi mdi-map-marker"></i><span class="subtext">San Francisco</span></div>
+                  <a href="https://newrelic.com" target="_blank"><div><i class="mdi mdi-open-in-new"></i><span class="subtext">newrelic.com</span></div></a>
+                  <div class="description">
+                    Redesigned New Relic's marketing CMS for better scalability and user experience. Led site-wide A/B testing to enhance onboarding, monetization, and growth. Optimized the billing system, improving performance and reliability.
+                  </div>
+                  <div class="skills">
+                    <div>Javascript</div>
+                    <div>React</div>
+                    <div>Ember</div>
+                    <div>Java</div>
+                    <div>Optimizely</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="title">
+              <div>Fullstack Developer @ EyeCue Lab</div>
+              <div class="flex">
+                <span>2014 - 2016</span>
+                <div class="plus">
+                  <div class="plus-minus-toggle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="expand">
+              <div class="inner">
+                <div class="wrap">
+                  <div class="logo" id="eyecue"></div>
+                  <div><i class="mdi mdi-map-marker"></i><span class="subtext">Portland</span></div>
+                  <a href="https://eyecuelab.com" target="_blank"><div><i class="mdi mdi-open-in-new"></i><span class="subtext">eyecuelab.com</span></div></a>
+                  <div class="description">
+                    Delivered solutions for high-profile clients like Nike, Jaguar, and Tesla, aligning with business goals. Optimized applications for performance and compatibility, and collaborated with clients to design intuitive UI prototypes.                  </div>
+                  <div class="skills">
+                    <div>Javascript</div>
+                    <div>Jquery</div>
+                    <div>Ruby</div>
+                    <div>Rails</div>
+                    <div>NodeJS</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="quotes">
+          <div class="quote left">
+            <div class="flex">
+              <div><i class="mdi mdi-format-quote-open"></i></div>
+              <div class="avatar" id="jonathan"></div>
+            </div>
+            <div class="text">
+              Working with Matthew was an absolute game-changer for our company. He has this incredible knack for knowing exactly how a mockup is supposed to look and feel on the page. He was always collaborative and open to feedback and quick to offer thoughtful suggestions that elevated the design even further. It’s rare to find someone who balances technical expertise with such a great eye for detail. He made the entire process seamless, and honestly, I’d jump at the chance to work with them again 
+              <div class="name">- Jonathan Brazeau</div>
+              <span class="role">Product Design Leader at ChowNow</span>
+            </div>
+          </div>
+          <div class="right">
+            <div class="quote">
+              <div class="flex">
+                <div><i class="mdi mdi-format-quote-open"></i></div>
+                <div class="avatar" id="trevor"></div>
+              </div>
+              <div class="text">
+                Matt is AMAZING! If you have any doubt about hiring him, ask me – he'll never disappoint you!
+                <div class="name">- Trevor Streiber</div>
+                <span class="role">Lead Software Engineer at NewRelic</span>
+              </div>
+            </div>
+            <div class="quote">
+              <div class="flex">
+                <div><i class="mdi mdi-format-quote-open"></i></div>
+                <div class="avatar" id="rick"></div>
+              </div>
+              <div class="text">
+                Matt is one of the best professionals that we have known in web development skills. He knows how to leverage the latest tech and comes in clutch when planning complex projects.
+                <div class="name">- Rick Hou</div>
+                <span class="role">CEO & Founder at EyeCue Lab</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact">
+          <svg
+            preserveAspectRatio="none"
+            viewBox="0 0 100 102"
+            height="75"
+            width="100%"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            class="svgcolor-light"
+          >
+            <path d="M0 0 L50 100 L100 0 Z" fill="#1a191d"></path>
+          </svg>
+          <div class="container flex">
+            <div class="header waypoint" data-animation="slide-in-left">
+              CONTACT
+            </div>
+            <div
+              class="header-bar waypoint"
+              data-animation="slide-in-right"
+              data-delay=".25s"
+            ></div>
+            <div
+              class="highlight waypoint"
+              data-animation="slide-in-right"
+              data-delay=".5s"
+            >
+              Have a question or want to work together?
+            </div>
+            <form
+              class="waypoint"
+              data-animation="slide-up"
+              data-delay=".5s"
+              id="contact-form"
+              action="https://api.web3forms.com/submit" 
+              method="POST" 
+            >
+              <input placeholder="Name" type="text" name="name" required />
+              <input type="hidden" name="access_key" value="cdde2ef6-ca0e-437a-8dc6-17434a99a38f" />
+              <input
+                placeholder="Enter email"
+                type="email"
+                name="email"
+                required
+              />
+              <textarea
+                placeholder="Your Message"
+                type="text"
+                name="message"
+              ></textarea>
+              <div id="success">
+                <div>
+                  Your message was sent successfully. Thanks!<span
+                    id="close"
+                    class="mdi mdi-close"
+                  ></span>
+                </div>
+              </div>
+              <button class="button"  type="submit" id="submit" value="SUBMIT"> 
+                <span>SUBMIT</span>
+              </button>
+              <p id="result" class="error"></p>
+            </form>
+          </div>
+      </div>
+      </section>
+
+      <footer>
+        <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+
+        <div class="icon-wrap flex row">
+          <a href="https://www.linkedin.com/in/mattwilliams85">
+            <div class="flex icon" id="icon-2">
+              <i class="mdi mdi-linkedin"></i>
+            </div>
+          </a>
+          <a href="https://www.facebook.com/matthew.williams.351">
+            <div class="flex icon" id="icon-3">
+              <i class="mdi mdi-facebook"></i>
+            </div>
+          </a>
+          <a href="https://instagram.com/infinite_edge/">
+            <div class="flex icon" id="icon-4">
+              <i class="mdi mdi-instagram"></i>
+            </div>
+          </a>
+          <a href="http://codepen.io/matthewwilliams/">
+            <div class="flex icon" id="icon-5">
+              <i class="mdi mdi-codepen"></i>
+            </div>
+          </a>
+        </div>
+        <div class="info-box">
+          <div class="footnote">
+            MATT WILLIAMS <span class="highlight">&copy;2025</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    </div>  
+  </body>
+</html>
+
+<script src="scripts/canvas.js"></script>
